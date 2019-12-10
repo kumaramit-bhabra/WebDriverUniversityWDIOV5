@@ -1,0 +1,100 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1575935383707' stop='1575935389068'>
+    <name>Validate Contact Us Page functionality</name>
+    <title>Validate Contact Us Page functionality</title>
+    <test-cases>
+        <test-case start='1575935383707' status='broken' stop='1575935388647'>
+            <name>Test 1 . Welcome message is displayed if the user fills up all the information &amp; press Submit</name>
+            <title>Test 1 . Welcome message is displayed if the user fills up all the information &amp; press Submit</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-78.0.3904.108'/>
+            </parameters>
+            <steps>
+                <step start='1575935383723' status='passed' stop='1575935384374'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4e71a890-2c96-446e-bab7-e5f7be1a4ae6-attachment.json' type='application/json' size='75'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1575935384374' status='passed' stop='1575935388631'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1575935388647' status='broken' stop='1575935388647'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='fa3f4333-a252-4e5e-aef4-1714716260a5-attachment.json' type='application/json' size='64'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.firstName.setValue is not a function</message>
+                <stack-trace>TypeError: this.firstName.setValue is not a function
+                    at ContactUs_Page.submitAllInformationForContactUs (C:\Users\Admin\Documents\WebDriverUniversityWDIOV5\pageObjects\ContactUs_Page.js:52:28)
+                    at Context.it (C:\Users\Admin\Documents\WebDriverUniversityWDIOV5\tests\contactUsTest.js:17:23)
+                    at Context.executeAsync (C:\Users\Admin\Documents\WebDriverUniversityWDIOV5\node_modules\@wdio\utils\build\shim.js:123:21)
+                    at Context.testFrameworkFnWrapper (C:\Users\Admin\Documents\WebDriverUniversityWDIOV5\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:55:28)
+                    at &lt;anonymous></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1575935388662' status='broken' stop='1575935389065'>
+            <name>Test 2. An error message is being displayed if information is missing</name>
+            <title>Test 2. An error message is being displayed if information is missing</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-78.0.3904.108'/>
+            </parameters>
+            <steps>
+                <step start='1575935388662' status='passed' stop='1575935388778'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='f43cd460-53fc-433a-8f29-761b92cb1eee-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Response' source='57d3a675-f59d-434c-af49-b9470489f45c-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1575935389034' status='passed' stop='1575935389056'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1575935389059' status='broken' stop='1575935389065'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f7aa5c1e-70cb-42d0-a637-8ba02db18b92-attachment.json' type='application/json' size='64'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.firstName.setValue is not a function</message>
+                <stack-trace>TypeError: this.firstName.setValue is not a function
+                    at ContactUs_Page.setFirstName (C:\Users\Admin\Documents\WebDriverUniversityWDIOV5\pageObjects\ContactUs_Page.js:31:31)
+                    at Context.it (C:\Users\Admin\Documents\WebDriverUniversityWDIOV5\tests\contactUsTest.js:24:23)
+                    at Context.executeAsync (C:\Users\Admin\Documents\WebDriverUniversityWDIOV5\node_modules\@wdio\utils\build\shim.js:123:21)
+                    at Context.testFrameworkFnWrapper (C:\Users\Admin\Documents\WebDriverUniversityWDIOV5\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:55:28)
+                    at &lt;anonymous></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
