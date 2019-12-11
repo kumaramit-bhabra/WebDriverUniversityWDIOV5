@@ -19,7 +19,6 @@
     "del": "^3.0.0",
     "loglevel-plugin-prefix": "^0.8.4",
     "mocha": "^6.0.1",
-    "selenium-standalone": "^6.15.3",
     "sync-request": "^6.0.0",
     "webdriverio": "^5.6.2"
   },
