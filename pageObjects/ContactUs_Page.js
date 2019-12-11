@@ -1,32 +1,26 @@
 class ContactUs_Page {
     get firstName() {
-        //return $("//input[@name='first_name']");
-        return $("[name='first_name']");
+        return $("//input[@name='first_name']");
     }
 
     get lastName() {
-        //return $("//input[@name='last_name']");
-        return $("[name='last_name']");
+        return $("//input[@name='last_name']");
     }
 
     get emailAddress() {
-        return $("[name='email']");
-        //return $("//input[@name='email']");
+        return $("//input[@name='email']");
     }
 
     get message() {
-        return $("textarea");
-        //return $("//textarea[@name='message']");
+        return $("//textarea[@name='message']");
     }
 
     get submitBttn() {
-        return $("[type='submit']");
-        //return $("//input[@type='submit']");
+        return $("//input[@type='submit']");
     }
 
     get successfullConfirmation() {
-        return $("#contact_reply h1");
-        //return $("//h1[contains(text(),'Thank You for your Message!')]");
+        return $("//h1[contains(text(),'Thank You for your Message!')]");
     }
 
     get errorMessage() {

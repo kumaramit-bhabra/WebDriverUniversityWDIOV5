@@ -10,10 +10,10 @@ describe("Validate Contact Us Page functionality", ()=>{
 
     it("Test 1 . Welcome message is displayed if the user fills up all the information & press Submit", ()=>{
     
-        /*contactUsPage.setFirstName("Kumar Amit");
+        contactUsPage.setFirstName("Kumar Amit");
         contactUsPage.setLastName("Bhabra");
         contactUsPage.setEmailAddress("amitxyz@yahoo.com");
-        contactUsPage.setComments("Postive Test");*/
+        contactUsPage.setComments("Postive Test");
         contactUsPage.submitAllInformationForContactUs("Kumar Amit","Bhabra","amitxyz@yahoo.com","Postive Test");
         contactUsPage.submitBttnClick();
         contactUsPage.confirmSuccessfulSubmission();

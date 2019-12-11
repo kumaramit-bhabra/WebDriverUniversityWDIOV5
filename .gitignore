@@ -1,3 +1,5 @@
 node_modules/
 allure-report/
 reports/
+allure-results/
+wdio.conf_backup.js
